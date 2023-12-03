@@ -234,6 +234,24 @@ h2 {
     grid-row: 2/3;
 }
 
+#trip-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.rate-hero {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+}
+
+.rate-box {
+    grid-column: 1/4;
+}
+
+.rate-img {
+    width: 100%;
+}
+
 @media screen and (max-width: 900px) {
 
     #hero,
