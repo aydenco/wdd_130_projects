@@ -252,7 +252,7 @@ h2 {
     width: 100%;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
 
     #hero,
     .home-grid {
@@ -311,4 +311,4 @@ h2 {
     footer {
         margin-top: 25px;
     }
-}
+} */
