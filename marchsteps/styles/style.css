@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&family=Major+Mono+Display&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #aab5c3;
+}
+
+header {
+    background-color: #f5f47e;
+    opacity: 100%;
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-template-rows: 121px;
+}
+
+.logo {
+    width: 100px;
+    border: 3px solid #2F3E46;
+    border-radius: 10%;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 10px
+}
+
+nav a {
+    text-align: center;
+    color: blue;
+    text-decoration: none;
+    align-self: center;
+    font: bold 25px "Major Mono Display", Ariel;
+    
+}
+
+nav a:nth-of-type(2) {
+    margin-left: 100px;
+}
+
+nav a:nth-of-type(6) {
+    margin-right: 100px;
+}
+
+nav a:hover {
+    background-color: #CAD2C5;
+    color: #2F3E46;
+}
+
+footer {
+    background-color: #f5f47e;
+    color: blue;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Major Mono Display", Ariel;
+}
+
+p {
+    font-family: "M PLUS Code Latin", Ariel;
+}
+
+#home-hero {
+    text-align: center;
+    margin: 100px auto;
+    width: 40%;
+}
+
+#home-title {
+    margin: 100px;
+}
+
+.step-banner {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 80px 0;
+}
+
+.step-content {
+    grid-column: 1/4;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: auto repeat(8, 1fr);
+    grid-template-rows: 60px 1fr 30px;
+    border: 2px solid black;
+}
+
+.step-letter {
+    font-size: 40px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 20px 0 0 10px;
+}
+
+.step-title {
+    grid-column: 2/5;
+    margin: 40px 0 0 0;
+}
+
+.step-summary {
+    grid-column: 3/8;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+.step-content a {
+    grid-column: 9/10;
+    grid-row: 3/4;
+    text-decoration: none;
+    font-family: "M PLUS Code Latin", Ariel;
+}
+
+.step-banner img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.img-odd {
+    grid-column: 5/6;
+    grid-row: 1/4;
+}
+
+.img-even {
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.content-even {
+    grid-column: 3/6;
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    #hero,
+    .home-grid {
+        display: block;
+        height: auto;
+    }
+
+    nav,
+    footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: flex;
+        padding: 2px;
+        font-size: 10px;
+    }
+
+    nav a:nth-of-type(2) {
+        margin-left: 0;
+    }
+    
+    nav a:nth-of-type(6) {
+        margin-right: 0;
+    }
+
+    #home-hero {
+        margin-top: 0;
+    }
+
+    #home-title {
+        font-size: 25px;
+        margin: 0;
+    }
+
+    .rivers-card,
+    .camping-card,
+    .rapids-card {
+        margin: 50px auto;
+        width: 60%;
+    }
+
+    #background {
+        display: none;
+    }
+
+    .mountains,
+    .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}
