@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&family=Major+Mono+Display&display=swap');
 
 #content {
-    max-width: 1600px;
     margin: 0 auto;
-    background-color: #aab5c3;
+    background-color: whitesmoke;
 }
 
 header {
@@ -34,7 +33,7 @@ nav {
 
 nav a {
     text-align: center;
-    color: blue;
+    color: #102b44;
     text-decoration: none;
     align-self: center;
     font: bold 25px "Major Mono Display", Ariel;
@@ -56,7 +55,7 @@ nav a:hover {
 
 footer {
     background-color: #f5f47e;
-    color: blue;
+    color: #102b44;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
@@ -68,8 +67,14 @@ footer p {
     text-align: center;
 }
 
+footer a {
+    font-family: "M PLUS Code Latin", Ariel;
+    color: #102b44;
+}
+
 h1, h2, h3, h4 {
     font-family: "Major Mono Display", Ariel;
+    color: #102b44;
 }
 
 p {
@@ -90,7 +95,8 @@ p {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
-    margin: 80px 0;
+    margin: 80px auto;
+    max-width: 1600px;
 }
 
 .step-content {
@@ -100,6 +106,8 @@ p {
     grid-template-columns: auto repeat(8, 1fr);
     grid-template-rows: 60px 1fr 30px;
     border: 2px solid black;
+    color: #102b44;
+    background-color: #aab5c3;
 }
 
 .step-letter {
@@ -125,6 +133,7 @@ p {
     grid-row: 3/4;
     text-decoration: none;
     font-family: "M PLUS Code Latin", Ariel;
+    color: #102b44;
 }
 
 .step-banner img {
@@ -176,7 +185,7 @@ p {
     }
 
     #home-hero {
-        margin-top: 0;
+        width: 80%;
     }
 
     #home-title {
@@ -184,22 +193,26 @@ p {
         margin: 0;
     }
 
-    .rivers-card,
-    .camping-card,
-    .rapids-card {
-        margin: 50px auto;
-        width: 60%;
+    #home-desc {
+        font-size: 15px;
+        margin: 40px 0 0 0;
     }
 
-    #background {
-        display: none;
-    }
-
-    .mountains,
-    .msg {
-        width: 80%;
+    .step-banner {
         display: block;
-        margin: 0 auto;
+    }
+
+    .step-content {
+       margin-bottom: 10px;
+       grid-template-columns: auto repeat(7, 1fr) auto;
+    }
+
+    .step-title {
+        grid-column: 2/9;
+    }
+
+    .step-content a {
+        margin-right: 10px;
     }
 
     footer {
