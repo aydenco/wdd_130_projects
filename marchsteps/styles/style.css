@@ -223,7 +223,7 @@ p, li {
 
 .in-depth-intro {
     text-align: center;
-    margin: 100px auto 200px auto;
+    margin: 100px auto 100px auto;
     width: 40%;
 }
 
@@ -308,9 +308,14 @@ li {
     margin-left: 80px;
 }
 
-
 /* Page 3 */
+#resource-hero {
+    text-align: center;
+}
 
+#resource-title {
+    fontsi
+}
 
 
 
