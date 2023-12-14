@@ -5,6 +5,7 @@
     background-color: whitesmoke;
 }
 
+/* Navbar */
 header {
     background-color: #f5f47e;
     opacity: 100%;
@@ -53,6 +54,7 @@ nav a:hover {
     color: #2F3E46;
 }
 
+/* Footer */
 footer {
     background-color: #f5f47e;
     color: #102b44;
@@ -72,6 +74,7 @@ footer a {
     color: #102b44;
 }
 
+/* Universal Attributes */
 h1, h2, h3, h4 {
     font-family: "Major Mono Display", Ariel;
     color: #102b44;
@@ -81,6 +84,7 @@ p {
     font-family: "M PLUS Code Latin", Ariel;
 }
 
+/* Home Page */
 #home-hero {
     text-align: center;
     margin: 100px auto;
@@ -154,6 +158,54 @@ p {
 .content-even {
     grid-column: 3/6;
 }
+
+/* Web Component */
+.img-box {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f5f47e;
+  }
+  
+  .img-box:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: #102b44;
+    font: bold 25px "M PLUS Code Latin", Ariel;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/* Page 1 */
+
+
+
+
+/* Page 2 */
+
 
 
 
