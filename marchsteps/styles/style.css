@@ -311,13 +311,74 @@ li {
 /* Page 3 */
 #resource-hero {
     text-align: center;
+    margin-bottom: 150px;
 }
 
 #resource-title {
-    fontsi
+    font-size: 50px;
+    margin: 100px 0;
 }
 
+#resource-intro {
+    font-size: 20px;
+}
 
+#resources-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px 1fr 200px;
+    grid-template-rows: 1fr 100px 1fr 100px 1fr;
+    /* margin: 0; */
+}
+
+.resource-box {
+    display: grid;
+    grid-template-columns: auto 20px 1fr;
+    grid-template-rows: 20px auto 20px;
+    background-color: #aab5c3;
+    border: 2px solid black;
+}
+
+.resource-link {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.resource-desc {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    margin: 0 40px 0 0;
+}
+
+#source-one {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#source-two {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+#source-three {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#source-four {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+#source-five {
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+#source-six {
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
 
 @media screen and (max-width: 900px) {
 
@@ -417,6 +478,15 @@ li {
 
     .supplies {
         margin: 0 0 80px 0;
+    }
+
+    #resources-container {
+        display: block;
+    }
+    
+    .resource-box {
+        display: block;
+        margin: 10px;
     }
 
     footer {
